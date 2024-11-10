@@ -24,6 +24,9 @@ RUN npm run build
 # Stage 2: Create the production image
 FROM nginx:alpine
 
+# Copy the Nginx configuration file
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy the build output from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
