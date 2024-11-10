@@ -1,6 +1,6 @@
 # Dockerfile
 # Stage 1: Build the application
-FROM node:14 AS build
+FROM node:22 AS build
 
 # Set working directory
 WORKDIR /app
