@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <h1>Welcome to User Management System</h1>
-      <Link to="/user">Go to User Management</Link>
+      <Link to="/users">Go to User Management</Link>
     </div>
   );
 }
